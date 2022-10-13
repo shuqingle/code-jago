@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0664af9e-827b-4baa-aaa5-77561f3ae7b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jvm-book-depth-know/out/production/jvm-book-depth-know/com/jago/B001_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jvm-book-depth-know/out/production/jvm-book-depth-know/com/jago/B001_Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm-vedio-heima/com/jago/V001_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm-vedio-heima/com/jago/V001_Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jago/V001_Test.java" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +14,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +45,7 @@
     <option name="width" value="1877" />
     <option name="height" value="1115" />
   </component>
+  <component name="ProjectId" id="2G3ZmN4L5SaKHduHEEjiUs4ufF4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -84,30 +80,22 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/git-load-files/code-jago/jago-bottom-core-tech-stack/jvm-core-tech-tech/jvm-book-depth-know"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gitdownload\code-jago\jago-bottom-core-tech-stack\jvm-core-tech-tech\jvm-vedio-heima" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="V001_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -129,6 +117,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -141,6 +130,7 @@
       <updated>1665565553373</updated>
       <workItem from="1665565554637" duration="448000" />
       <workItem from="1665566161750" duration="4418000" />
+      <workItem from="1665619396379" duration="406000" />
     </task>
     <servers />
   </component>
@@ -182,7 +172,18 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/jago/V001_Test.java">
