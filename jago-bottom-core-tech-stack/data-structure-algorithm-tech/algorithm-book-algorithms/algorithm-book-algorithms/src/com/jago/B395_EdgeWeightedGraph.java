@@ -2,6 +2,9 @@ package com.jago;
 
 import java.util.Iterator;
 
+/**
+ * 加权无向图
+ */
 public class B395_EdgeWeightedGraph {
     private final int V;
     private int E;

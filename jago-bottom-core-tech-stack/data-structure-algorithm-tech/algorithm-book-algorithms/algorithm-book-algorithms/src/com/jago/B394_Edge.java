@@ -1,6 +1,8 @@
 package com.jago;
 
-
+/**
+ * 边实体
+ */
 public class B394_Edge implements Comparable<B394_Edge> {
     private final int v;
     private final int w;
