@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7719e5-92f3-426a-824d-4b16d2dc385d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jvm-book-depth-know/com/jago/B001_Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jvm-book-depth-know/com/jago/B001_Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jvm-vedio-heima/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jvm-vedio-heima/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,15 +74,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/git-load-files/code-jago/jago-bottom-core-tech-stack/jvm-core-tech-tech/jvm-book-depth-know",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/git-load-files/code-jago/jago-bottom-core-tech-stack/jvm-core-tech-tech/jvm-book-depth-know&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gitdownload\code-jago\jago-bottom-core-tech-stack\jvm-core-tech-tech\jvm-book-depth-know" />
@@ -124,6 +122,7 @@
       <workItem from="1665565430748" duration="575000" />
       <workItem from="1665566154564" duration="18000" />
       <workItem from="1665619576765" duration="248000" />
+      <workItem from="1665706547863" duration="2427000" />
     </task>
     <servers />
   </component>

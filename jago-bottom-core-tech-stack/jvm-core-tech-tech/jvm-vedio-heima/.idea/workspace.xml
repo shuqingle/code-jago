@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0664af9e-827b-4baa-aaa5-77561f3ae7b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm-tech/algorithm-book-algorithms/algorithm-book-algorithms/src/com/jago/B394_Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm-tech/algorithm-book-algorithms/algorithm-book-algorithms/src/com/jago/B394_Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data-structure-algorithm-tech/algorithm-book-algorithms/algorithm-book-algorithms/src/com/jago/B395_EdgeWeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../data-structure-algorithm-tech/algorithm-book-algorithms/algorithm-book-algorithms/src/com/jago/B395_EdgeWeightedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jvm-book-depth-know/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,15 +85,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/git-load-files/code-jago/jago-bottom-core-tech-stack/jvm-core-tech-tech/jvm-vedio-heima",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/git-load-files/code-jago/jago-bottom-core-tech-stack/jvm-core-tech-tech/jvm-vedio-heima&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\git-load-files\code-jago\jago-bottom-core-tech-stack\jvm-core-tech-tech\jvm-vedio-heima" />
@@ -151,6 +149,7 @@
       <workItem from="1665566161750" duration="4418000" />
       <workItem from="1665619396379" duration="406000" />
       <workItem from="1665619885288" duration="1614000" />
+      <workItem from="1665706343459" duration="1393000" />
     </task>
     <servers />
   </component>
@@ -204,27 +203,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jago/V008_Demo1_1.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jago/V008_Demo1_1.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/jago/V008_Demo1_1.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
