@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0664af9e-827b-4baa-aaa5-77561f3ae7b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,44 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jago/V008_Demo1_1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#126#127#0" expanded="true" />
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jago/V010_Demo1_18.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jago/V011_Demo1_17.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/jago/V012_Demo1_2.java">
+        <entry file="file://$PROJECT_DIR$/src/com/jago/V019_Demo1_4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="146">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jago/V019_Demo1_5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,6 +56,10 @@
         <option value="$PROJECT_DIR$/src/com/jago/V010_Demo1_18.java" />
         <option value="$PROJECT_DIR$/src/com/jago/V011_Demo1_17.java" />
         <option value="$PROJECT_DIR$/src/com/jago/V012_Demo1_2.java" />
+        <option value="$PROJECT_DIR$/src/com/jago/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/jago/V015_Demo1_3.java" />
+        <option value="$PROJECT_DIR$/src/com/jago/V019_Demo1_5.java" />
+        <option value="$PROJECT_DIR$/src/com/jago/V019_Demo1_4.java" />
       </list>
     </option>
   </component>
@@ -92,9 +74,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-18" />
+    <option name="x" value="-17" />
     <option name="width" value="1878" />
-    <option name="height" value="1014" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectId" id="2G3ZmN4L5SaKHduHEEjiUs4ufF4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -105,7 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,6 +110,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -142,6 +124,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -161,22 +144,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.V012_Demo1_2">
-    <configuration name="V001_Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jago.V001_Test" />
-      <module name="jvm-vedio-heima" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jago.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="V008_Demo1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jago.V008_Demo1_1" />
+  <component name="RunManager" selected="Application.V019_Demo1_4">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jago.Test" />
       <module name="jvm-vedio-heima" />
       <extension name="coverage">
         <pattern>
@@ -202,16 +172,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="V015_Demo1_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jago.V015_Demo1_3" />
+      <module name="jvm-vedio-heima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jago.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="V019_Demo1_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jago.V019_Demo1_4" />
+      <module name="jvm-vedio-heima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jago.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="V019_Demo1_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jago.V019_Demo1_5" />
+      <module name="jvm-vedio-heima" />
+      <option name="VM_PARAMETERS" value="-Xmx8m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jago.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.V001_Test" />
-      <item itemvalue="Application.V008_Demo1_1" />
       <item itemvalue="Application.V012_Demo1_2" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.V015_Demo1_3" />
+      <item itemvalue="Application.V019_Demo1_5" />
+      <item itemvalue="Application.V019_Demo1_4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.V019_Demo1_4" />
+        <item itemvalue="Application.V015_Demo1_3" />
+        <item itemvalue="Application.V019_Demo1_5" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.V012_Demo1_2" />
-        <item itemvalue="Application.V008_Demo1_1" />
-        <item itemvalue="Application.V001_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -232,35 +246,44 @@
       <workItem from="1665619885288" duration="1614000" />
       <workItem from="1665666284384" duration="658000" />
       <workItem from="1665752829445" duration="591000" />
-      <workItem from="1665795205450" duration="2012000" />
+      <workItem from="1665795205450" duration="5646000" />
+      <workItem from="1665805390529" duration="839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8127000" />
+    <option name="totallyTimeSpent" value="12600000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="0" width="1252" height="676" extended-state="0" />
-    <editor active="true" />
+    <frame x="-11" y="0" width="1252" height="692" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.59365994" visible="true" weight="0.29018614" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7506775" visible="true" weight="0.27749577" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.40634006" side_tool="true" visible="true" weight="0.29018614" />
+      <window_info id="Structure" order="5" sideWeight="0.24932249" side_tool="true" weight="0.6218274" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3288201" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35576922" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33395872" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35526314" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32833022" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30393997" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -330,6 +353,12 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/jago/V019_Demo1_5.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -339,10 +368,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/jago/V001_Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/jago/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/com/jago/V008_Demo1_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#106#107#0" expanded="true" />
             <element signature="e#126#127#0" expanded="true" />
@@ -354,22 +384,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jago/V010_Demo1_18.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="162">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jago/V011_Demo1_17.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="891">
           <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jago/V012_Demo1_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jago/V015_Demo1_3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jago/V019_Demo1_5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jago/V019_Demo1_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
