@@ -11,7 +11,15 @@ public class V028_Demo1_22 {
 
         String s1 = "a";
         String s2 = "b";
-        String s3 = "ab";
-        String s4 = s1 + s2;
+        String s3 = "ab";//s3在StringTable中
+//        //直接去常量池中找"ab"
+//        String s4 = "a" + "b";//javac在编译期间优化，结果已经在编译期间确定为ab
+//        System.out.println(s3 == s4);//true
+        //s4是new出来的，所以在堆中
+        //变量拼接，表示引用值有可能修改，结果不能确定，所以在运行期间用StringBuilder动态拼接
+        String s4 = s1 + s2;//new StringBuilder().append("a").append("b").toString();,而toString就是new String("ab")
+        //jdk 8 是 false;
+        //jdk 17没用StringBuilder,所以是true
+        System.out.println(s3==s4);
     }
 }
