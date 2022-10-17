@@ -1,6 +1,5 @@
 package com.jago;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
@@ -8,12 +7,12 @@ import java.util.TreeMap;
 /**
  * 最短路径：Dijkstrap算法
  */
-public class B403_DijkstraSP {
+public class B423_DijkstraSP {
     private B415_DirectedEdge[] edgeTo;
     private double[] distTo;
     private IndexMinPQ<Double> pq;
 
-    public B403_DijkstraSP(B415_EdgeWeightedDigraph G, int s){
+    public B423_DijkstraSP(B415_EdgeWeightedDigraph G, int s){
         edgeTo = new B415_DirectedEdge[G.V()];
         distTo = new double[G.V()];
         pq = new IndexMinPQ<>();
