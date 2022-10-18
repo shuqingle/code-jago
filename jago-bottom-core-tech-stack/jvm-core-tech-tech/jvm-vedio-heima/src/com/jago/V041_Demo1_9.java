@@ -1,7 +1,9 @@
 package com.jago;
 
+import javax.imageio.IIOException;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
@@ -42,6 +44,21 @@ public class V041_Demo1_9 {
     }
 
     private static void io() {
-
+        long start = System.nanoTime();
+        try(
+                FileInputStream from = new FileInputStream(FROM);
+                FileOutputStream to = new FileOutputStream(TO);
+                ){
+            byte[] buf = new byte[_1Mb];
+            while (true){
+                int leng = from.read(buf);
+                if (leng == -1) break;
+                to.write(buf,0,leng);
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        long end = System.nanoTime();
+        System.out.println("io用时："+(end - start)/1000000.0);
     }
 }
