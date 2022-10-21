@@ -15,6 +15,17 @@ public class B462_MSD {
         }
     }
 
+    /**
+     *
+     * B
+     * ABD
+     * AB
+     * A
+     * AC
+     * ABE
+     *
+     * @param a
+     */
     public static void sort(String [] a){
         int N = a.length;
         aux = new String[N];
