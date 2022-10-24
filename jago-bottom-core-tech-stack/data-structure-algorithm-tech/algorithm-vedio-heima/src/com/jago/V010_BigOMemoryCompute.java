@@ -1,6 +1,6 @@
 package com.jago;
 
-public class V010_ArrayMemory {
+public class V010_BigOMemoryCompute {
     //空间复杂度O(1)
     public static int[] reverse1(int[] arr){
         int n = arr.length;//4字节
