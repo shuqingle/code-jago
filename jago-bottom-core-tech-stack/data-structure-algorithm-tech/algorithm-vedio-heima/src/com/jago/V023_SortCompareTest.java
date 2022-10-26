@@ -3,8 +3,9 @@ package com.jago;
 public class V023_SortCompareTest {
     public static void main(String[] args) {
         Integer[] a = getArray();
-//        testInsertion(a);
+        testInsertion(a);
         testShell(a);
+        testMerge(a);//shell 快于 merge
     }
 
     public static void testInsertion(Integer [] a){
@@ -19,11 +20,17 @@ public class V023_SortCompareTest {
         long end = System.currentTimeMillis();
         System.out.println("希尔排序完成时间："+(end-start));
     }
+    public static void testMerge(Integer [] a){
+        long start = System.currentTimeMillis();
+        V026_Merge.sort(a);
+        long end = System.currentTimeMillis();
+        System.out.println("归并排序完成时间："+(end-start));
+    }
 
     public static Integer[] getArray(){
-        Integer [] a = new Integer[100000000];
-        for (int i = 99999999; i >=0; i--) {
-            a[i] = 99999999-i;
+        Integer [] a = new Integer[1000000];
+        for (int i = 999999; i >=0; i--) {
+            a[i] = 999999-i;
         }
         return a;
     }
