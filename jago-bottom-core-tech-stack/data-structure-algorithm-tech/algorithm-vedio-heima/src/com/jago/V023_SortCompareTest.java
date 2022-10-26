@@ -3,7 +3,7 @@ package com.jago;
 public class V023_SortCompareTest {
     public static void main(String[] args) {
         Integer[] a = getArray();
-        testInsertion(a);
+//        testInsertion(a);
         testShell(a);
         testMerge(a);//shell 快于 merge
     }
