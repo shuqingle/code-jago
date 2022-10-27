@@ -2,7 +2,15 @@ package com.jago;
 
 import com.sun.org.apache.bcel.internal.generic.RET;
 
-public class V039_SequenceList <T>{
+import java.util.Iterator;
+
+/**
+ * 线性表
+ * @param <T>
+ */
+//Iterable需要指定泛型，否则foreach增强不知道具体数据类型
+//foreach增强会调用iterable中的iterator方法,不实现Iterable无法实现foreach增强
+public class V039_SequenceList <T> implements Iterable<T>{
     //储存元素的数组
     private T[] eles;
     //当前线性表的长度
@@ -37,11 +45,12 @@ public class V039_SequenceList <T>{
     //在线性表中第i个元素之前插入一个值为t额数据元素
     public void insert(int i,T t){
         //先把i索引处的元素及其后面的元素依次向后移动一位
-        for (int j = N-1; j >=i ; j--) {
-            eles[j+1] = eles[j];
+        for (int j = N; j >=i ; j--) {
+            eles[j] = eles[j-1];
         }
         //再把t元素放到i位置
         eles[i] = t;
+        //元素个数+1
         N++;
     }
     //删除并返回线性表中第i个元素的值
@@ -63,13 +72,35 @@ public class V039_SequenceList <T>{
         return -1;
     }
 
+    //实现遍历第一步：实现Iterable接口的iterator方法
+    @Override
+    public Iterator iterator() {
+        return new SequenceListIterator();
+    }
+    //实现遍历第二步：声明内部类，实现Iterator接口，重写hasNext和Next方法
+    private class SequenceListIterator implements Iterator{
+        //当前元素
+        private int cusor;
+        public SequenceListIterator(){
+            this.cusor = 0;
+        }
+        @Override
+        public boolean hasNext() {
+            return this.cusor < N;
+        }
+        @Override
+        public Object next() {
+            return eles[this.cusor++];
+        }
+    }
     public static void main(String[] args) {
         V039_SequenceList<String> list = new V039_SequenceList(10);
         list.insert("张三");
         list.insert("李四");
         list.insert(1,"王五");
         System.out.println(list);
+        for(String s : list){
+            System.out.println(s);
+        }
     }
-
-
 }
