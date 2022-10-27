@@ -5,7 +5,7 @@ import com.sun.org.apache.bcel.internal.generic.RET;
 import java.util.Iterator;
 
 /**
- * 线性表
+ * 线性表-顺序表
  * @param <T>
  */
 //Iterable需要指定泛型，否则foreach增强不知道具体数据类型
@@ -40,10 +40,15 @@ public class V039_SequenceList <T> implements Iterable<T>{
     }
     //向线性表中添加一个元素t
     public void insert(T t){
+        //扩容
+        if (N == eles.length) resize(2*eles.length);
+        //插入
         eles[N++] = t;
     }
-    //在线性表中第i个元素之前插入一个值为t额数据元素
+    //在线性表中第i个元素之前插入一个值为t的数据元素
     public void insert(int i,T t){
+        //扩容
+        if (N == eles.length) resize(2*eles.length);
         //先把i索引处的元素及其后面的元素依次向后移动一位
         for (int j = N; j >=i ; j--) {
             eles[j] = eles[j-1];
@@ -55,6 +60,8 @@ public class V039_SequenceList <T> implements Iterable<T>{
     }
     //删除并返回线性表中第i个元素的值
     public T remove(int i){
+        //缩容
+        if (N < eles.length/4) resize(eles.length/2);
         //记录索引i处的值
         T current = eles[i];
         //让索引i后面的元素依次向前移动一位即可
@@ -70,6 +77,17 @@ public class V039_SequenceList <T> implements Iterable<T>{
     public int indexOf(T t){
         for (int i = 0; i < this.N; i++) if (eles[i].equals(t)) return i;
         return -1;
+    }
+    //根据参数的newSize,重置eles的大小
+    public void resize(int newSize){
+        //定义一个临时数组，指向原数组
+        T [] temp = eles;
+        //创建新数组
+        eles = (T[])new Object[newSize];
+        // 把原数组的数据拷贝到新数组
+        for (int i = 0; i < N; i++) {
+            eles[i] = temp[i];
+        }
     }
 
     //实现遍历第一步：实现Iterable接口的iterator方法
