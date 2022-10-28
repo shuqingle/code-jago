@@ -3,7 +3,7 @@ package com.jago;
 import java.util.Iterator;
 
 /**
- * 线性表-链表-单向链表
+ * 单向链表-单向链表-单向单向链表
  * @param <T>
  */
 public class V046_OneWayLinkList<T> implements Iterable<T> {
@@ -18,7 +18,7 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
     }
     //记录头节点
     private Node head;
-    //记录链表长度
+    //记录单向链表长度
     private int N;
     //构造方法
     public V046_OneWayLinkList() {
@@ -27,20 +27,20 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         //初始化元素个数
         this.N = 0;
     }
-    //空置线性表
+    //空置单向链表
     public void clear(){
         if (this.head != null) this.head.next = null;
         this.N = 0;
     }
-    //判断线性表是否为空，是则返回true,否则返回false
+    //判断单向链表是否为空，是则返回true,否则返回false
     public boolean isEmpty(){
         return this.N == 0;
     }
-    //获取线性表中元素的个数
+    //获取单向链表中元素的个数
     public int length(){
         return this.N;
     }
-    //读取并返回线性表中第i个元素的值
+    //读取并返回单向链表中第i个元素的值
     public T get(int i){
         //通过循环，从头结点开始往后找，依次找i次，就可以找到对应的元素
         Node n = this.head.next;
@@ -51,7 +51,7 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         if (n == null) return null;
         else return n.item;
     }
-    //向线性表中添加一个元素t
+    //向单向链表中添加一个元素t
     public void insert(T t){
         //找到当前最后一个结点
         Node n = this.head;
@@ -63,7 +63,7 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         //元素的个数+1
         this.N++;
     }
-    //在线性表中第i个元素之前插入一个值为t的数据元素
+    //在单向链表中第i个元素之前插入一个值为t的数据元素
     public void insert(int i,T t){
         //找到i位置前一个结点
         Node pre = this.head;
@@ -80,7 +80,7 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         //元素的个数+1
         this.N++;
     }
-    //删除并返回线性表中第i个元素的值
+    //删除并返回单向链表中第i个元素的值
     public T remove(int i){
         //找到i位置前一个结点
         Node pre = this.head;
@@ -95,7 +95,7 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         this.N--;
         return curr.item;
     }
-    //返回线性表中首次出现的指定的数据元素的位排序，若不存在，则返回-1
+    //返回单向链表中首次出现的指定的数据元素的位排序，若不存在，则返回-1
     public int indexOf(T t){
         //从头节点开始，依次找到每一个结点，取出item,和t比较，如果相同，就找到了
         Node n = this.head;
