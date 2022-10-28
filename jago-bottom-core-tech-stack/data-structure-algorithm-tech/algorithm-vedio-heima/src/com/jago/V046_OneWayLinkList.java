@@ -1,10 +1,12 @@
 package com.jago;
 
+import java.util.Iterator;
+
 /**
  * 线性表-链表-单向链表
  * @param <T>
  */
-public class V046_LinkList<T> {
+public class V046_OneWayLinkList<T> implements Iterable<T> {
     //成员内部类：结点类
     private class Node{
         T item;
@@ -14,20 +16,17 @@ public class V046_LinkList<T> {
             this.next = next;
         }
     }
-
-
     //记录头节点
     private Node head;
     //记录链表长度
     private int N;
     //构造方法
-    public V046_LinkList() {
+    public V046_OneWayLinkList() {
         //初始化头结点
         this.head = new Node(null,null);
         //初始化元素个数
         this.N = 0;
     }
-
     //空置线性表
     public void clear(){
         if (this.head != null) this.head.next = null;
@@ -108,8 +107,35 @@ public class V046_LinkList<T> {
         }
         return -1;
     }
-
-
+    @Override
+    public Iterator<T> iterator() {
+        return new OneWayLinkListIterator();
+    }
+    private class OneWayLinkListIterator implements Iterator<T>{
+        private Node n;
+        public OneWayLinkListIterator() {
+            this.n = head;
+        }
+        @Override
+        public boolean hasNext() {
+            return n.next != null;
+        }
+        @Override
+        public T next() {
+            n = n.next;
+            return n.item;
+        }
+    }
+    public static void main(String[] args) {
+        V046_OneWayLinkList<String> list = new V046_OneWayLinkList();
+        list.insert("张三");
+        list.insert("李四");
+        list.insert(1,"王五");
+        System.out.println(list);
+        for(String s : list){
+            System.out.println(s);
+        }
+    }
 
 
 }
