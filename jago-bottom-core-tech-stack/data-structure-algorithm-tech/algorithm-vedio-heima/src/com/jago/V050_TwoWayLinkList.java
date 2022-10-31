@@ -127,16 +127,20 @@ public class V050_TwoWayLinkList<T> implements Iterable<T> {
     }
     //删除并返回双向链表中第i个元素的值
     public T remove(int i){
-        //找到i位置前一个结点
-        Node pre = this.head;
-        //找到i位置的结点
-        for (int j = 0; j < i-1; j++) {
+        //找到i位置的前一个结点
+        Node pre = head;
+        for (int index = 0; index < i; index++) {
             pre = pre.next;
         }
-        //当前结点
+        //找到i位置的结点
         Node curr = pre.next;
-        //前一个结点指向下一个结点
-        pre.next = curr.next;
+        //找到i位置的下一个结点
+        Node nextNode = curr.next;
+        //让i位置的前一个结点的下一个结点，变为i位置的下一个结点
+        pre.next = nextNode;
+        //让i位置的下一个结点的上一个结点，变为i位置的前一个结点
+        nextNode.pre = pre;
+        //元素的个数减一
         this.N--;
         return curr.item;
     }
@@ -169,7 +173,8 @@ public class V050_TwoWayLinkList<T> implements Iterable<T> {
         for(String s : list){
             System.out.println(s);
         }
+        String last1 = list.getFirst();
+        System.out.println(last1);
     }
-
 
 }

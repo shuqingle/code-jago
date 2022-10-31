@@ -107,6 +107,31 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         }
         return -1;
     }
+    //反转整个链表
+    public void reverse(){
+        //判断当前链表是否为空链表如果是则结束运行,如果不是，调用重载方法reverse
+        if (isEmpty()) return;
+        reverse(head.next);
+    }
+
+    //反转指定的结点curr,并把反转后的结点返回
+    public Node reverse(Node curr){
+        if (curr.next == null){
+            head.next = curr;
+            return curr;
+        }
+        //递归反转当前结点curr的下一个结点,返回值就是链表反转后，当前结点的上一个节点
+        Node pre = reverse(curr.next);
+        //让返回的结点的下一个节点变为当前的结点
+        pre.next = curr;
+        //把当前结点的下一个结点变为null
+        curr.next = null;
+        return curr;
+    }
+
+
+
+
     @Override
     public Iterator<T> iterator() {
         return new OneWayLinkListIterator();
@@ -132,6 +157,10 @@ public class V046_OneWayLinkList<T> implements Iterable<T> {
         list.insert("李四");
         list.insert(1,"王五");
         System.out.println(list);
+        for(String s : list){
+            System.out.println(s);
+        }
+        list.reverse();
         for(String s : list){
             System.out.println(s);
         }
