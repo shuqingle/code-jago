@@ -1,5 +1,8 @@
 package com.jago;
 
+/**+
+ * 快慢指针
+ */
 public class V058_FastSlowTest {
     private static class Node<T>{
         T item;
