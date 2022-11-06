@@ -159,6 +159,14 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
         else return x;
     }
 
+    //---------------------前序遍历start---------------------//
+
+    //---------------------前序遍历end---------------------//
+    //---------------------中序遍历start---------------------//
+    //---------------------中序遍历end---------------------//
+    //---------------------后序遍历start---------------------//
+    //---------------------后序遍历end---------------------//
+
     public static void main(String[] args) {
         V083_BinaryTree binaryTree = new V083_BinaryTree();
 //        binaryTree.put("3","33");
