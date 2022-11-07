@@ -1,0 +1,21 @@
+package com.jago;
+
+/**
+ * finally出现了
+
+ */
+public class V128_Demo3_12_3 {
+    public static void main(String[] args) {
+        int result = test();
+        System.out.println(result);
+    }
+
+    public static int test(){
+        int i = 10;
+        try {
+            return i;
+        }finally {
+           i=20;
+        }
+    }
+}
