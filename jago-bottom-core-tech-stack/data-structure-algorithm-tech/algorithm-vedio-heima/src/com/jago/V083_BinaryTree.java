@@ -1,5 +1,7 @@
 package com.jago;
 
+import java.util.Queue;
+
 /**
  * 二叉查找树
  * 本代码还有很多小问题，特殊情况处理有误，做参考
@@ -160,15 +162,72 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
     }
 
     //---------------------前序遍历start---------------------//
-
+    //使用前序遍历获取整个树所有的键
+    public V072_Queue<Key> preErgodic(){
+        V072_Queue<Key> keys = new V072_Queue<Key>() ;
+        preErgodic(root,keys);
+        return keys;
+    }
+    //获取指定树x所有键，并放到keys队列中
+    private void preErgodic(Node x,V072_Queue<Key> keys){
+        if (x == null) return;
+        //把x结点的key放入到keys中
+        keys.enqueue(x.key);
+        //递归遍历x结点的左子树
+        if (x.left != null) preErgodic(x.left,keys);
+        //递归遍历x结点的右子树
+        if (x.right != null) preErgodic(x.right,keys);
+    }
     //---------------------前序遍历end---------------------//
+
+
+
     //---------------------中序遍历start---------------------//
+    //使用中序遍历获取树中所有键
+    public V072_Queue<Key> midErgodic(){
+        V072_Queue<Key> keys = new V072_Queue<>();
+        midErgodic(root,keys);
+        return keys;
+    }
+
+    //使用中序遍历数去树x中所有键，并存放到keys中
+    public void midErgodic(Node x,V072_Queue<Key> keys){
+        if (x == null) return;
+        //递归遍历x结点的左子树，把左子树键放到keys中
+        if (x.left != null) midErgodic(x.left,keys);
+        //把x结点的key放入到keys中
+        keys.enqueue(x.key);
+        //递归遍历x结点的右子树，把右子树键放到keys中
+        if (x.right != null) midErgodic(x.right,keys);
+    }
     //---------------------中序遍历end---------------------//
+
+
     //---------------------后序遍历start---------------------//
+    //使用后序遍历获取树中所有键
+    public V072_Queue<Key> afterErgodic(){
+        V072_Queue<Key> keys = new V072_Queue<>();
+        afterErgodic(root,keys);
+        return keys;
+    }
+
+    //使用中序遍历数去树x中所有键，并存放到keys中
+    public void afterErgodic(Node x,V072_Queue<Key> keys){
+        if (x == null) return;
+        //递归遍历x结点的左子树，把左子树键放到keys中
+        if (x.left != null) afterErgodic(x.left,keys);
+        //递归遍历x结点的右子树，把右子树键放到keys中
+        if (x.right != null) afterErgodic(x.right,keys);
+        //把x结点的key放入到keys中
+        keys.enqueue(x.key);
+    }
     //---------------------后序遍历end---------------------//
 
+
+
+
     public static void main(String[] args) {
-        V083_BinaryTree binaryTree = new V083_BinaryTree();
+//        V083_BinaryTree binaryTree = new V083_BinaryTree();
 //        binaryTree.put("3","33");
 //        binaryTree.put("2","22");
 //        binaryTree.put("4","44");
@@ -176,14 +235,31 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
 //        binaryTree.put("6","66");
 //        binaryTree.put("7","77");
 //        binaryTree.put("1","11");
-                binaryTree.put("1","11");
-        binaryTree.put("2","22");
-        binaryTree.put("3","3");
-        System.out.println("元素的个数"+binaryTree.size());
-        System.out.println(binaryTree.get("2"));
-        binaryTree.delete("2");
-        System.out.println("元素的个数"+binaryTree.size());
-        System.out.println(binaryTree.get("2"));
+//                binaryTree.put("1","11");
+//        binaryTree.put("2","22");
+//        binaryTree.put("3","3");
+//        System.out.println("元素的个数"+binaryTree.size());
+//        System.out.println(binaryTree.get("2"));
+//        binaryTree.delete("2");
+//        System.out.println("元素的个数"+binaryTree.size());
+//        System.out.println(binaryTree.get("2"));
+
+        V083_BinaryTree binaryTree = new V083_BinaryTree();
+        binaryTree.put("E","5");
+        binaryTree.put("B","2");
+        binaryTree.put("G","7");
+        binaryTree.put("A","1");
+        binaryTree.put("D","4");
+        binaryTree.put("F","6");
+        binaryTree.put("H","8");
+        binaryTree.put("C","3");
+        //前序遍历测试
+//        V072_Queue queue = binaryTree.preErgodic();
+        V072_Queue queue = binaryTree.midErgodic();
+        //中序遍历测试
+        queue.forEach(x->{
+            System.out.println(x);
+        });
     }
 
 }
