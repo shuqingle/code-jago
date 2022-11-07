@@ -224,7 +224,25 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
     //---------------------后序遍历end---------------------//
 
 
-
+    //---------------------层序遍历start---------------------//
+    public V072_Queue<Key> layerErgodic(){
+        //定义2个队列，分别存储树中的键和树中的结点
+        V072_Queue<Key> keys = new V072_Queue<>();
+        V072_Queue<Node> nodes = new V072_Queue<>();
+        //默认往队列中放入根节点
+        nodes.enqueue(root);
+        while (!nodes.isEmpty()){
+            //从队列中弹出一个结点，把key放入到keys中
+            Node n = nodes.dequeue();
+            keys.enqueue(n.key);
+            //判断当前结点还有没有左子结点，如果有放入nodes
+            if (n.left != null) nodes.enqueue(n.left);
+            //判断当前结点还有没有右子结点，如果有放入nodes
+            if (n.right != null) nodes.enqueue(n.right);
+        }
+        return keys;
+    }
+    //---------------------层序遍历end---------------------//
 
     public static void main(String[] args) {
 //        V083_BinaryTree binaryTree = new V083_BinaryTree();
@@ -255,7 +273,12 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
         binaryTree.put("C","3");
         //前序遍历测试
 //        V072_Queue queue = binaryTree.preErgodic();
-        V072_Queue queue = binaryTree.midErgodic();
+        //中序遍历测试
+//        V072_Queue queue = binaryTree.midErgodic();
+        //后序遍历测试
+//        V072_Queue queue = binaryTree.afterErgodic();
+        //层序遍历测试
+        V072_Queue queue = binaryTree.layerErgodic();
         //中序遍历测试
         queue.forEach(x->{
             System.out.println(x);
