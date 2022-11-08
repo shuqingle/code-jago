@@ -243,6 +243,15 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
         return keys;
     }
     //---------------------层序遍历end---------------------//
+    //计算树的最大深度
+    public int maxDepth(){
+        return -1;
+    }
+    //计算指定树x的最大深度
+    private int maxDepth(Node x){
+        return -1;
+    }
+
 
     public static void main(String[] args) {
 //        V083_BinaryTree binaryTree = new V083_BinaryTree();
