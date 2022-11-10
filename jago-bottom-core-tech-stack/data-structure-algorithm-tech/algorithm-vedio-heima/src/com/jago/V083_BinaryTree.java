@@ -245,11 +245,21 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
     //---------------------层序遍历end---------------------//
     //计算树的最大深度
     public int maxDepth(){
-        return -1;
+        return maxDepth(root);
     }
     //计算指定树x的最大深度
     private int maxDepth(Node x){
-        return -1;
+        if (x == null) return 0;
+        int max = 0;
+        int maxL = 0;
+        int maxR = 0;
+        //计算x结点左子树的最大深度
+        if (x.left != null) maxL = maxDepth(x.left);
+        //计算x结点右子树的最大深度
+        if (x.right != null) maxR = maxDepth(x.right);
+        //比较左子树最大深度和右子树最大深度取较大值+1
+        max = maxL > maxR ? maxL+1:maxR+1;
+        return max;
     }
 
 
@@ -287,11 +297,13 @@ public class V083_BinaryTree<Key extends Comparable<Key>,Value> {
         //后序遍历测试
 //        V072_Queue queue = binaryTree.afterErgodic();
         //层序遍历测试
-        V072_Queue queue = binaryTree.layerErgodic();
-        //中序遍历测试
-        queue.forEach(x->{
-            System.out.println(x);
-        });
+//        V072_Queue queue = binaryTree.layerErgodic();
+//        //中序遍历测试
+//        queue.forEach(x->{
+//            System.out.println(x);
+//        });
+        //最大深度
+        System.out.println(binaryTree.maxDepth());
     }
 
 }
