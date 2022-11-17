@@ -86,12 +86,10 @@ public class V110_MinPriorityQueue<T extends Comparable<T>>{
     public static void main(String[] args) {
         V110_MinPriorityQueue<String> queue = new V110_MinPriorityQueue<>(10);
         queue.insert("C");
+        queue.insert("E");
         queue.insert("B");
         queue.insert("A");
         queue.insert("D");
-        queue.insert("E");
-        queue.insert("G");
-        queue.insert("F");
         while (!queue.isEmpty()){
             System.out.print(queue.delMin()+" ");
         }

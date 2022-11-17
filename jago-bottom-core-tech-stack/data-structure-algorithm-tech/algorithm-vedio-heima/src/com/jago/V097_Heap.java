@@ -88,11 +88,9 @@ public class V097_Heap<T extends Comparable<T>>{
         V097_Heap<String> heap = new V097_Heap(10);
         heap.insert("A");
         heap.insert("B");
-        heap.insert("C");
         heap.insert("D");
         heap.insert("E");
-        heap.insert("F");
-        heap.insert("G");
+        heap.insert("C");
         String result = null;
         while ((result = heap.delMax()) != null){
             System.out.print(result+" ");
